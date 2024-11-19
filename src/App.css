@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+.navbar-brand .logo,
+.logo {
+  color: #FF6347;
+  /* Tomato Red */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.carousel-item img {
+  height: 100%;
+  background-position: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.carousel-item {
+  height: 100dvh;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-item .hover {
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-item .hover::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-item .hover:hover::before {
+  width: 100%;
+}
+
+.intro-link {
+  position: relative;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.intro-link::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  bottom: -8px;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.intro-link:hover::before {
+  width: 100%;
+}
+
+.intro-link:hover {
+  -o-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.AboutImage {
+  background-image: url(./Slider-Images/robertoHund.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 70dvh;
+}
+.AboutContent  {
+  height: 70dvh;
+}
+.StroyImage {
+  width: 100%;
+  object-fit: cover;
+}
+.card {
+  position: relative;
+}
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
