@@ -1,97 +1,99 @@
-.navbar-brand .logo,
+/* Style for the logo within navbar */
+.navbar-brand .logo, 
 .logo {
-  color: #FF6347;
-  /* Tomato Red */
+  color: #FF6347; /* Tomato Red color for the logo */
 }
 
+/* Style for images inside carousel items */
 .carousel-item img {
-  height: 100%;
-  background-position: center;
+  height: 100%; /* Make the image's height take up the full height of the container */
+  background-position: center; /* Center the image background */
 }
 
+/* Define the size of the carousel item */
 .carousel-item {
-  height: 100dvh;
-  width: 100%;
+  height: 100dvh; /* Set the height to 100% of the viewport height */
+  width: 100%; /* Ensure the item takes up the full width */
 }
 
+/* Style for the nav-item to apply hover effects */
 .nav-item .hover {
-  position: relative;
+  position: relative; /* Position it relative to allow absolute positioning of pseudo-elements */
 }
 
+/* Before pseudo-element for hover effect */
 .nav-item .hover::before {
-  position: absolute;
-  content: "";
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background-color: black;
-  -o-transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  transition: 0.3s;
+  position: absolute; /* Position it absolutely within the nav-item */
+  content: ""; /* Empty content to create a line */
+  bottom: 0; /* Align it at the bottom of the nav-item */
+  left: 0; /* Align it at the left of the nav-item */
+  width: 0%; /* Initially, the line's width is 0% */
+  height: 2px; /* Set the line's height */
+  background-color: black; /* Set the color of the line */
+  transition: 0.3s; /* Smooth transition for width change */
 }
 
+/* On hover, expand the line to 100% */
 .nav-item .hover:hover::before {
   width: 100%;
 }
 
+/* Style for the intro-link to apply hover effect */
 .intro-link {
-  position: relative;
-  -o-transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  transition: 0.3s;
+  position: relative; /* Make it relative to position the pseudo-element */
+  transition: 0.3s; /* Smooth transition on hover */
 }
 
+/* Before pseudo-element for hover effect */
 .intro-link::before {
-  position: absolute;
-  content: "";
-  width: 0%;
-  height: 2px;
-  background-color: black;
-  bottom: -8px;
-  -o-transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  transition: 0.3s;
+  position: absolute; /* Position the line absolutely inside the intro-link */
+  content: ""; /* Empty content to create a line */
+  width: 0%; /* Initially, the line's width is 0% */
+  height: 2px; /* Set the line's height */
+  background-color: black; /* Set the color of the line */
+  bottom: -8px; /* Position the line just below the text */
+  transition: 0.3s; /* Smooth transition for width change */
 }
 
+/* On hover, expand the line to 100% */
 .intro-link:hover::before {
   width: 100%;
 }
 
+/* Apply scaling effect on hover */
 .intro-link:hover {
-  -o-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  transform: scale(1.1); /* Scale the link by 10% when hovered */
 }
 
+/* Style for the about section background image */
 .AboutImage {
-  background-image: url(./Slider-Images/robertoHund.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 70dvh;
+  background-image: url(./Slider-Images/robertoHund.jpg); /* Set the background image */
+  background-repeat: no-repeat; /* Prevent repeating the background image */
+  background-size: cover; /* Cover the area without stretching the image */
+  background-position: center; /* Center the background image */
+  height: 70dvh; /* Set the height to 70% of the viewport height */
 }
-.AboutContent  {
-  height: 70dvh;
+
+/* Style for the About content container */
+.AboutContent {
+  height: 70dvh; /* Set the height to 70% of the viewport height */
 }
+
+/* Style for images in the story section */
 .StroyImage {
-  width: 100%;
-  object-fit: cover;
+  width: 100%; /* Make the image take up the full width */
+  object-fit: cover; /* Ensure the image covers the container without stretching */
 }
+
+/* Style for cards to allow positioning of icons */
 .card {
-  position: relative;
+  position: relative; /* Position relative to allow positioning of child elements */
 }
+
+/* Style for the icon inside the card */
 .icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  position: absolute; /* Position the icon absolutely within the card */
+  top: 0; /* Align it to the top */
+  left: 0; /* Align it to the left */
+  width: 100%; /* Make the icon span the full width of the card */
 }
